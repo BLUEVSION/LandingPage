@@ -1,2 +1,2 @@
 # LandingPage
-Site direcionado para a Promoção da solução da BlueVision das matérias de Front-End Design e Web Development
+Website aimed at promoting the BlueVision solution for Front-End Design and Web Development
