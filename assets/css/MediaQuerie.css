@@ -1,0 +1,50 @@
+@media (max-width: 768px) {
+    .header {
+        height: 70vh; /* Adjust header height for smaller screens */
+    }
+
+    .header__background {
+        height: 70vh; /* Adjust background height for smaller screens */
+    }
+
+    .main {
+        height: auto; /* Adjust main section height for smaller screens */
+        padding: 20px; /* Add padding for better spacing */
+    }
+
+    .side-menu {
+        width: 200px; /* Reduce menu width for smaller screens */
+    }
+
+    .side-menu ul li {
+        padding: 10px; /* Adjust padding for smaller menu items */
+    }
+
+    #hamburger {
+        top: 15px; /* Adjust position for the hamburger icon */
+        right: 15px; /* Adjust position for the hamburger icon */
+    }
+
+    #hamburger svg {
+        height: 2.5em; /* Adjust size of the hamburger icon */
+    }
+}
+
+@media (max-width: 480px) {
+    .side-menu {
+        width: 150px; /* Further reduce menu width for very small screens */
+    }
+
+    .side-menu ul li {
+        padding: 8px; /* Further adjust padding for very small menu items */
+    }
+
+    #hamburger {
+        top: 10px; /* Further adjust position for the hamburger icon */
+        right: 10px; /* Further adjust position for the hamburger icon */
+    }
+
+    #hamburger svg {
+        height: 2em; /* Further adjust size of the hamburger icon */
+    }
+}
