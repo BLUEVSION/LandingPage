@@ -1,13 +1,7 @@
-
 body {
     margin: 0;
+    font-family: Arial, sans-serif;
 }
-
-
-
-
-/*----------------------- MENU LATERAL -----------------------*/ 
-
 
 .menu-toggle {
     position: fixed;
@@ -25,7 +19,7 @@ body {
 .menu-toggle .bar {
     width: 100%;
     height: 4px;
-    background-color: #ffffff;
+    background-color: #333;
     transition: 0.3s;
 }
 
@@ -98,50 +92,4 @@ body {
 .overlay.visible {
     visibility: visible;
     opacity: 1;
-}
-
-
-
-/*----------------------- HEADER -----------------------*/ 
-
-
-
-
-.header {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 90vh; 
-}
-
-.header__background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 90vh;
-    object-fit: cover;
-    z-index: 0; 
-}
-
-
-/*----------------------- MAIN -----------------------*/ 
-
-.main{
-
-
-    position: relative;
-    background-image: url('/assets/img/background/mainbackground.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 7000px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-
 }
