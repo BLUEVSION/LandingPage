@@ -34,6 +34,8 @@
         font-size: 70vh; /* Ajusta o tamanho do título para telas menores */
         height: 70vh; /* Ajusta a altura do título para telas menores */
     }
+    
+    
 }
 
 /* Media Query para dispositivos com largura máxima de 480px */
