@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.spacer {
+    height: 100vh; /* Espaço suficiente para rolar a página */
+}
+
+#fade-in-title {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#fade-in-title.fade-in {
+    opacity: 1;
+}

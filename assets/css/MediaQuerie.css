@@ -1,50 +1,57 @@
+/* Media Query para dispositivos com largura máxima de 768px */
 @media (max-width: 768px) {
     .header {
-        height: 70vh; /* Adjust header height for smaller screens */
+        height: 70vh; /* Ajusta a altura do cabeçalho para telas menores */
     }
 
     .header__background {
-        height: 70vh; /* Adjust background height for smaller screens */
+        height: 70vh; /* Ajusta a altura do plano de fundo para telas menores */
     }
 
     .main {
-        height: auto; /* Adjust main section height for smaller screens */
-        padding: 20px; /* Add padding for better spacing */
+        height: auto; /* Ajusta a altura da seção principal para telas menores */
+        padding: 20px; /* Adiciona espaçamento interno para melhor espaçamento */
     }
 
     .side-menu {
-        width: 200px; /* Reduce menu width for smaller screens */
+        width: 200px; /* Reduz a largura do menu para telas menores */
     }
 
     .side-menu ul li {
-        padding: 10px; /* Adjust padding for smaller menu items */
+        padding: 10px; /* Ajusta o preenchimento para itens de menu menores */
     }
 
     #hamburger {
-        top: 15px; /* Adjust position for the hamburger icon */
-        right: 15px; /* Adjust position for the hamburger icon */
+        top: 15px; /* Ajusta a posição do ícone do menu hambúrguer */
+        right: 15px; /* Ajusta a posição do ícone do menu hambúrguer */
     }
 
     #hamburger svg {
-        height: 2.5em; /* Adjust size of the hamburger icon */
+        height: 2.5em; /* Ajusta o tamanho do ícone do menu hambúrguer */
+    }
+    
+    .header__title {
+        font-size: 70vh; /* Ajusta o tamanho do título para telas menores */
+        height: 70vh; /* Ajusta a altura do título para telas menores */
     }
 }
 
+/* Media Query para dispositivos com largura máxima de 480px */
 @media (max-width: 480px) {
     .side-menu {
-        width: 150px; /* Further reduce menu width for very small screens */
+        width: 150px; /* Reduz ainda mais a largura do menu para telas muito pequenas */
     }
 
     .side-menu ul li {
-        padding: 8px; /* Further adjust padding for very small menu items */
+        padding: 8px; /* Ajusta o preenchimento para itens de menu muito pequenos */
     }
 
     #hamburger {
-        top: 10px; /* Further adjust position for the hamburger icon */
-        right: 10px; /* Further adjust position for the hamburger icon */
+        top: 10px; /* Ajusta ainda mais a posição do ícone do menu hambúrguer */
+        right: 10px; /* Ajusta ainda mais a posição do ícone do menu hambúrguer */
     }
 
     #hamburger svg {
-        height: 2em; /* Further adjust size of the hamburger icon */
+        height: 2em; /* Ajusta ainda mais o tamanho do ícone do menu hambúrguer */
     }
 }

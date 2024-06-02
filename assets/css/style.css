@@ -3,14 +3,6 @@ body {
     font-family: "Raleway";
 }
 
-
-.raleway{
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-}
-
 /* --------------------- NAVBAR ---------------------------*/
 
 .header__navbar {
@@ -25,11 +17,11 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(255, 255, 255, 0.192);
     z-index: 2; 
 }
 
-.navbar__img{
+.navbar__img {
     width: 15%;
     display: flex;
     align-items: center;
@@ -39,20 +31,20 @@ body {
     padding-left: 20px;
 }
 
-
-
 /*----------------------- MENU LATERAL -----------------------*/
 
 #hamburger {
     position: fixed;
+    padding-right: 0px;
+    margin-right: -20px;
     top: 20px;
     right: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: -10px;
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 150px;
     cursor: pointer;
     z-index: 1000;
 }
@@ -66,6 +58,7 @@ body {
 }
 
 #hamburger svg {
+    width: 50%;
     height: 3em;
     transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -116,9 +109,9 @@ body {
 }
 
 .side-menu ul {
+    margin-top: -450px;
     list-style-type: none;
     padding: 0;
-    margin: 0;
     width: calc(100% - 5px);
     display: flex;
     flex-direction: column;
@@ -136,8 +129,34 @@ body {
     display: block;
 }
 
+.side-menu__account {
+    display: flex;
+    align-items: flex-start;
+    justify-content: end;
+}
+
+.side-menu__account-link {
+    padding-left: 15px;
+    margin-top: 500px;
+    margin-bottom: -700px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: end;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+}
+
+.side-menu__account-link:hover {
+    background-color: #023143;
+    transition-duration: .5s;
+    transform: scale(1.04);
+}
+
 .side-menu ul li:hover {
-    background-color: rgb(68, 100, 100);
+    background-color: #023143;
     transition-duration: .5s;
     transform: scale(1.04);
 }
@@ -178,7 +197,6 @@ body {
 
 /*----------------------- HEADER -----------------------*/
 
-
 .header {
     position: relative;
     display: flex;
@@ -198,9 +216,7 @@ body {
     z-index: 0; 
 }
 
-
 .header__title {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,24 +224,22 @@ body {
     margin-right: 50px;
 }
 
-.header__title h1{
+.header__title h1 {
     font-size: 100px;
 }
 
 .header__title img {
-   
     width: 200px;
     margin-right: 10px;
 }
 
-.title__color1{
+.title__color1 {
     color: #023143;
 }
 
-.title__color2{
+.title__color2 {
     color: white
 }
-
 
 /*----------------------- MAIN -----------------------*/
 
@@ -243,13 +257,135 @@ body {
     color: white;
 }
 
-.main__background{
+.main__background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 90vh;
+    height: 7000px;
     object-fit: cover;
     z-index: 0; 
 }
 
+.main__section {
+    margin-top: -5000px;
+    height: 500px;
+}
+
+.main__title {
+    margin-top: -1200px;
+    margin-bottom: 700px;
+    display: flex;
+    align-items: center;
+    justify-content:    center;
+    font-size: 50px;
+    color: #d4d3d3;
+}
+
+.spacer {
+    height: 100vh; 
+}
+
+#fade-in-title {
+    opacity: 0;
+    transition: opacity 4s ease-in-out;
+}
+
+#fade-in-title.fade-in {
+    opacity: 1;
+}
+
+/*---------------------- ELEMENTS ------------------------ */
+
+.elements {
+    max-width: 300px; 
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    flex: 0 1 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elements--right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1; 
+}
+
+.elements--left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+}
+
+#elements1 {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 10%;
+    margin-right: 70px;
+    padding-left: 150px;
+    rotate: 50deg;
+}
+
+#elements2 {
+    margin-right: 200px;
+    rotate: 20deg;
+}
+
+#elements3 {
+    width: 100%;
+    max-width: 400px; 
+    height: 100%;
+    margin: 0 auto; 
+    margin-left: 500px;
+    margin-top: -100px;
+    rotate: 30deg;
+}
+
+#elements4 {
+   
+    width: 100%;
+    max-width: 400px; 
+    height: 100px;
+    margin: 0 auto; 
+    margin-left: 300px;
+    margin-bottom: 1100px;
+    rotate: 30deg;
+}
+
+
+@media (max-width: 768px) {
+    .header__title h1 {
+        font-size: 6vw; /* Ajuste para telas menores */
+    }
+    #header__title__img {
+        width: 20%;
+    }
+}
+
+
+/*------------------- PROBLEMA -------------------- */
+
+.problema__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.problema__title h2{
+    margin: 0;
+    display: block;
+    font-size: 50px;
+}
+
+.problema__title h3{
+    margin: 0;
+    display: block;
+    font-size: 30px;
+}
