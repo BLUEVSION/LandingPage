@@ -35,6 +35,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
+//FLIP
+
+
 document.addEventListener("DOMContentLoaded", function() {
     // Seleciona todos os quadrados
     const squares = document.querySelectorAll('.impactos__list li.square');

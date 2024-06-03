@@ -477,6 +477,7 @@
 .impactos__list {
     display: flex;
     flex-wrap: wrap;
+    /*justify-content: center;*/
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -492,13 +493,16 @@
     background: linear-gradient(to top right, #3c9bb3, #1a68a4);
     border: #21d2e9 0.5px solid;
     box-sizing: border-box;
-    position: relative; /* Adicionado para permitir posicionamento absoluto de conteúdo interno */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
     overflow: hidden; /* Esconde o overflow */
     text-overflow: ellipsis; /* Adiciona reticências para overflow */
     white-space: normal; /* Permite quebra de linha */
     opacity: 0; /* Inicialmente oculto */
     transform: translateY(20px); /* Inicialmente deslocado para baixo */
-    transition: opacity 2.6s ease-out, transform 2.6s ease-out;
+    transition: opacity 2.6s ease-out, transform 2.6s ease-out; /* Alteração: tempo de transição inicial */
 }
 
 .impactos__list li.visible {
@@ -509,7 +513,7 @@
 .impactos__list li:hover {
     transform: scale(1.04); /* Aumenta o tamanho */
     background: linear-gradient(to top right, #4abfdd, #228ad9); /* Alteração: adiciona mudança de cor */
-    transition: transform 0.5s ease-in-out, background 0.5s ease-in-out; /* Animação de transição ao passar o mouse */
+    transition: transform 0.5s ease-in-out, background 0.5s ease-in-out; /* Alteração: assegura que a transição de escala e background aconteça */
 }
 
 .impactos__list h3 {
