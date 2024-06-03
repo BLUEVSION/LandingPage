@@ -366,7 +366,7 @@
     display: flex;
     align-items: center;
     justify-content:    center;
-    font-size: 50px;
+    font-size: 70px;
     color: #d4d3d3;
 }
 
@@ -438,7 +438,7 @@
 }
 
 
-.problem__text{
+.problem__content{
     width: 100%;
     
 }
@@ -569,7 +569,7 @@
         opacity: 1;
     }
 }
-
+/*
 .square-inner {
     position: relative;
     width: 100%;
@@ -605,4 +605,44 @@
 
 .square.flip .square-inner {
     transform: rotateY(180deg);
+}*/
+
+
+
+
+
+/*------------------- PROJEÇÃO ESPACIAL MARITIMA PEM -------------------- */
+
+#PEM {
+    margin-top: 35%;
+    margin-bottom: 50%;
+}
+
+.container__pem {
+    font-size: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%; 
+    text-align: right;
+}
+
+.pem__title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    flex-direction: column; 
+    margin-top: -30%;
+    padding-bottom: 7%;
+    margin-bottom: 0%;
+    z-index: 2;
+}
+
+.pem__color1{
+    color: #21d2e9;
+
+}
+
+.pem__color2{
+    color: #21d2e9;
+    font-size: 60px;
 }
