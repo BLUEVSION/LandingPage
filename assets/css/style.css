@@ -5,8 +5,10 @@ body {
 
 /* --------------------- ALERT ---------------------------*/
 
+
+
 .alert-container {
-    padding-top: 100px;
+    padding-top: 40px;
     display: none;
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
@@ -24,17 +26,21 @@ body {
     
     width: 100%;
     max-width: 500px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     
   }
 
   .alert-box {
-    background-color: #ffffff3a;
+    background-color: #ffffff98;
     max-width: 400px;
     
     height: 300px;
     margin: auto;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
