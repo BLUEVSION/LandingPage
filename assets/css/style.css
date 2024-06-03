@@ -3,6 +3,69 @@ body {
     font-family: "Raleway";
 }
 
+/* --------------------- ALERT ---------------------------*/
+
+.alert-container {
+    padding-top: 100px;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+  }
+
+  .alert__img{
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+    max-width: 500px;
+    
+  }
+
+  .alert-box {
+    background-color: #ffffff3a;
+    max-width: 400px;
+    
+    height: 300px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .alert-message {
+    margin-bottom: 15px;
+  }
+
+  .btn-container {
+    text-align: center;
+  }
+
+  .btn {
+    gap: 20px;
+    width: 25%;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    
+  }
+
+  .btn-yes {
+    background-color: #21d2e9;
+    color: #fff;
+  }
+
+  .btn-no {
+    background-color: #a3a3a3;
+    color: #fff;
+  }
+
 /* --------------------- NAVBAR ---------------------------*/
 
 .header__navbar {
@@ -350,12 +413,13 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 70%; 
-    text-align: justify; 
     text-align: center;
 }
 
 
 .problem__text{
     width: 100%;
+    
 }
+
 

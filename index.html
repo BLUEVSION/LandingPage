@@ -9,8 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/MediaQuerie.css">
-
     <link rel="stylesheet" href="assets/css/style.css">
 
     <link rel="stylesheet" href="assets/css/elements.css">
@@ -19,6 +17,19 @@
 
 </head>
 <body>
+
+    <div class="alert-container" id="alertContainer">
+        <div class="alert-box">
+            <img class="alert__img" src="assets/img/alert/photo1.jpg" alt="">
+          <div class="alert-message">
+            <p>Deseja ir para a tela 2?</p>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-yes" onclick="goToScreen2()">Sim</button>
+            <button class="btn btn-no" onclick="stayOnScreen()">Não</button>
+          </div>
+        </div>
+    </div>
 
     <header class="header">
 
@@ -53,7 +64,7 @@
                 <li><a href="#PublicoAlvo">Público Alvo</a></li>
 
                 <li><a href="#ComoAjuda">Como pode ajudar?</a></li>
-                <div id="side-menu__account"><a class="side-menu__account-link" href="#"><img class="entrar__img" src="assets/img/icons/entrar.png" alt="">Entrar</a></div>
+                <div id="side-menu__account"><a class="side-menu__account-link" href="assets/pages/cadastro.html"><img class="entrar__img" src="assets/img/icons/entrar.png" alt="entrarButton">Entrar</a></div>
             </ul>
             
         </div>
@@ -112,6 +123,7 @@
                             </div>
                         </div>	 
 
+                        
                         <h2>Impactos das Atividades Humanas e das Mudanças Climáticas:</h2>
                         <p>
                         <ul>
@@ -231,8 +243,8 @@
                 </section>
                 <section id="Objetivos">
                     <article>
-                        <h1>Objetivos</h1>
-                        <p>Opa</p>
+                        <h2>Objetivos</h2>
+                        <h3><h3>
                     </article>
                 </section>
                     <section id="PublicoAlvo"></section>

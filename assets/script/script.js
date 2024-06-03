@@ -1,3 +1,24 @@
+      
+const hasSeenAlert = sessionStorage.getItem('hasSeenAlert');
+
+if (!hasSeenAlert) {
+    const alertContainer = document.getElementById('alertContainer');
+    alertContainer.style.display = 'block';
+}
+
+function goToScreen2() {
+    sessionStorage.setItem('hasSeenAlert', true);
+    // Substitua 'register.html' pelo caminho para a tela 2
+    window.location.href = 'assets/pages/register.html';
+}
+
+function stayOnScreen() {
+    sessionStorage.setItem('hasSeenAlert', true);
+    const alertContainer = document.getElementById('alertContainer');
+    alertContainer.style.display = 'none';
+}
+
+
 document.getElementById('hamburger').addEventListener('click', function(event) {
     const checkbox = this.querySelector('input');
     const sideMenu = document.getElementById('sideMenu');

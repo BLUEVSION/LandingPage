@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="../script/register.js" defer></script>
+
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        }
+    
+        .alert-container {
+          display: none;
+          background-color: rgba(0, 0, 0, 0.5);
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 9999;
+        }
+    
+        .alert-box {
+          background-color: #fff;
+          max-width: 400px;
+          margin: auto;
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    
+        .alert-message {
+          margin-bottom: 15px;
+        }
+    
+        .btn-container {
+          text-align: center;
+        }
+    
+        .btn {
+          padding: 10px 20px;
+          margin-right: 10px;
+          cursor: pointer;
+        }
+    
+        .btn-yes {
+          background-color: #28a745;
+          color: #fff;
+        }
+    
+        .btn-no {
+          background-color: #dc3545;
+          color: #fff;
+        }
+      </style>
+    </head>
+    <body>
+    
+    <div class="alert-container" id="alertContainer">
+      <div class="alert-box">
+        <div class="alert-message">
+          <p>Deseja ir para a tela 2?</p>
+        </div>
+        <div class="btn-container">
+          <button class="btn btn-yes" onclick="goToScreen2()">Sim</button>
+          <button class="btn btn-no" onclick="stayOnScreen()">Não</button>
+        </div>
+      </div>
+    </div>
+    
+    <h1>Bem-vindo!</h1>
+    <button id="login-btn">Entrar</button>
+    
+    <script>
+      
+      const hasSeenAlert = sessionStorage.getItem('hasSeenAlert');
+    
+      if (!hasSeenAlert) {
+        const alertContainer = document.getElementById('alertContainer');
+        alertContainer.style.display = 'block';
+      }
+    
+      function goToScreen2() {
+        sessionStorage.setItem('hasSeenAlert', true);
+        window.location.href = 'register.html';
+      }
+    
+      // Função para permanecer na tela atual
+      function stayOnScreen() {
+        sessionStorage.setItem('hasSeenAlert', true);
+        const alertContainer = document.getElementById('alertContainer');
+        alertContainer.style.display = 'none';
+      }
+    </script>
+    
+    </body>
+    </html>
+

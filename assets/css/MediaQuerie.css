@@ -29,13 +29,38 @@
     #hamburger svg {
         height: 2.5em; /* Ajusta o tamanho do ícone do menu hambúrguer */
     }
-    
+
     .header__title {
-        font-size: 70vh; /* Ajusta o tamanho do título para telas menores */
-        height: 70vh; /* Ajusta a altura do título para telas menores */
+        font-size: 2em; /* Ajusta o tamanho do título para telas menores */
+        height: auto; /* Deixa a altura do título automática */
     }
-    
-    
+
+    .header__title img {
+        max-width: 100%; /* Ajusta a largura da imagem do título */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .header__navbar .navbar__logo img {
+        width: 150px; /* Ajusta a largura do logo para telas menores */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .elements img {
+        max-width: 100%; /* Ajusta a largura das imagens dos elementos */
+        height: auto; /* Mantém a proporção das imagens */
+    }
+
+    .main__title h1 {
+        font-size: 1.5em; /* Ajusta o tamanho do título principal na seção main */
+    }
+
+    .problema__title h2, .problema__title h3 {
+        font-size: 1.2em; /* Ajusta o tamanho dos títulos na seção Problema */
+    }
+
+    .problema__title hr.main__hr {
+        width: 50%; /* Ajusta a largura do elemento horizontal */
+    }
 }
 
 /* Media Query para dispositivos com largura máxima de 480px */
@@ -55,5 +80,36 @@
 
     #hamburger svg {
         height: 2em; /* Ajusta ainda mais o tamanho do ícone do menu hambúrguer */
+    }
+
+    .header__title {
+        font-size: 1.5em; /* Ajusta o tamanho do título para telas muito pequenas */
+    }
+
+    .header__title img {
+        max-width: 100%; /* Ajusta a largura da imagem do título */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .header__navbar .navbar__logo img {
+        width: 120px; /* Ajusta a largura do logo para telas muito pequenas */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .elements img {
+        max-width: 100%; /* Ajusta a largura das imagens dos elementos */
+        height: auto; /* Mantém a proporção das imagens */
+    }
+
+    .main__title h1 {
+        font-size: 1.2em; /* Ajusta o tamanho do título principal na seção main */
+    }
+
+    .problema__title h2, .problema__title h3 {
+        font-size: 1em; /* Ajusta o tamanho dos títulos na seção Problema */
+    }
+
+    .problema__title hr.main__hr {
+        width: 50%; /* Ajusta a largura do elemento horizontal */
     }
 }
