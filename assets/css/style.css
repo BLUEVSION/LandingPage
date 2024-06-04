@@ -646,6 +646,20 @@
     margin-bottom: 50%;
 }
 
+.pem__img{
+    width: 100%;
+    
+}
+
+.pem-img__div{
+    margin-bottom: 17.5%;    
+    margin-left: 11%;
+    width: 1555px;
+    height: 300px;
+    overflow: hidden;
+
+}
+
 .container__pem {
     font-size: 30px;
     margin-left: 5%;
@@ -655,6 +669,7 @@
 }
 
 .pem__title {
+    color: black;
     display: flex;
     align-items: flex-end;
     justify-content: right;
@@ -663,6 +678,13 @@
     padding-bottom: 7%;
     margin-bottom: 0%;
     z-index: 2;
+}
+
+.pem__title h2{
+    margin-right: 2%;
+    background-color: white;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .pem__text{
