@@ -159,6 +159,7 @@
 }
 
 .side-menu {
+    flex: auto;
     position: fixed;
     top: 0;
     max-width: 250px;
@@ -359,17 +360,6 @@
     height: 500px;
 }
 
-.main__title {
-    text-align: center;
-    margin-top: -100%;
-    margin-bottom: 50%;
-    display: flex;
-    align-items: center;
-    justify-content:    center;
-    font-size: 70px;
-    color: #d4d3d3;
-}
-
 .main__hr{
     width: 1000px;
 }
@@ -378,12 +368,24 @@
     height: 100vh; 
 }
 
-.fade-in-title {
+
+.main__title {
+    text-align: center;
+    margin-top: -100%;
+    margin-bottom: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    color: #d4d3d3;
+}
+
+.fade-out {
     opacity: 0;
     transition: opacity 4s ease-in-out;
 }
 
-.fade-in-title.fade-in {
+.fade-in {
     opacity: 1;
 }
 
@@ -410,7 +412,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column; 
-    margin-top: -91%;
+    margin-top: -123%;
     padding-bottom: 20px;
     margin-bottom: 3%;
     z-index: 2;
@@ -419,14 +421,16 @@
 .problema__title h2{
     margin: 0;
     display: block;
-    font-size: 50px;
+    font-size: 80px;
     z-index: 3;
 }
 
 .problema__title h3{
     margin: 0;
     display: block;
-    font-size: 30px;
+    font-size: 35px;
+    margin-bottom: 1%;
+    z-index: 3;
 }
 
 .container {
@@ -441,6 +445,26 @@
 .problem__content{
     width: 100%;
     
+}
+
+
+
+
+
+/*
+.ocean1__background{
+
+    margin-top: -50%;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    /*object-fit: cover;*//*
+    z-index: 0;
+    opacity: 0;
+}
+
+.ocean1__background.visible {
+    opacity: 1;
 }
 
 /*------------------- IMPACTOS -------------------- */
@@ -472,7 +496,14 @@
     padding-bottom: 7%;
     margin-bottom: 0%;
     z-index: 2;
+    opacity: 0;
+    transition: opacity 1s ease-out;
 }
+
+.impactos__title.visible {
+    opacity: 1;
+}
+
 
 .impactos__list {
     display: flex;
@@ -484,6 +515,7 @@
 }
 
 .impactos__list li {
+    cursor: default;
     border-radius: 3px;
     font-size: 46%;
     width: 30%; 
@@ -502,7 +534,7 @@
     white-space: normal; /* Permite quebra de linha */
     opacity: 0; /* Inicialmente oculto */
     transform: translateY(20px); /* Inicialmente deslocado para baixo */
-    transition: opacity 2.6s ease-out, transform 2.6s ease-out; /* Alteração: tempo de transição inicial */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Alteração: tempo de transição inicial */
 }
 
 .impactos__list li.visible {
@@ -553,11 +585,7 @@
     opacity: 0;
 }
 
-.impactos__title {
-    position: relative;
-    animation: slide-in 4s ease-out forwards;
-    opacity: 0;
-}
+
 
 @keyframes slide-in {
     0% {
@@ -637,6 +665,16 @@
     z-index: 2;
 }
 
+.pem__text{
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+
+.pem__text p{
+
+    padding-bottom: 35px;
+}
+
 .pem__color1{
     color: #21d2e9;
 
@@ -644,5 +682,34 @@
 
 .pem__color2{
     color: #21d2e9;
-    font-size: 60px;
+    font-size: 90px;
 }
+
+.hr__pem1{
+    margin-top: 15px;
+    border: white 1px solid;
+    width: 93%;
+    align-items: flex-start;
+}
+
+.pem__text{
+    text-align: center;
+}
+
+.pem__list{
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.pem-list__title{
+    text-align: center;
+}
+
+.pem-list__title h3{
+    padding-bottom: 5px;
+}
+
+
+
+/*------------- API GOOGLE EARTH ---------------- */
+
