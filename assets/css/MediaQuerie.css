@@ -66,34 +66,34 @@
 /* Media Query para dispositivos com largura máxima de 480px */
 @media (max-width: 480px) {
     .side-menu {
-        width: 150px; /* Reduz ainda mais a largura do menu para telas muito pequenas */
+        width: 150px; 
     }
 
     .side-menu ul li {
-        padding: 8px; /* Ajusta o preenchimento para itens de menu muito pequenos */
+        padding: 8px;
     }
 
     #hamburger {
-        top: 10px; /* Ajusta ainda mais a posição do ícone do menu hambúrguer */
-        right: 10px; /* Ajusta ainda mais a posição do ícone do menu hambúrguer */
+        top: 10px; 
+        right: 10px; 
     }
 
     #hamburger svg {
-        height: 2em; /* Ajusta ainda mais o tamanho do ícone do menu hambúrguer */
+        height: 2em; 
     }
 
     .header__title {
-        font-size: 1.5em; /* Ajusta o tamanho do título para telas muito pequenas */
+        font-size: 1.5em;
     }
 
     .header__title img {
-        max-width: 100%; /* Ajusta a largura da imagem do título */
-        height: auto; /* Mantém a proporção da imagem */
+        max-width: 100%; 
+        height: auto; 
     }
 
     .header__navbar .navbar__logo img {
-        width: 120px; /* Ajusta a largura do logo para telas muito pequenas */
-        height: auto; /* Mantém a proporção da imagem */
+        width: 120px; 
+        height: auto;
     }
 
     .elements img {
