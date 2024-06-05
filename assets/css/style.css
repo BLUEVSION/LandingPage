@@ -785,6 +785,10 @@
     margin-right: 4%;
 }
 
+.pem-list__content{
+    list-style: none;
+}
+
 .pem-list__title{
     text-align: center;
 }
