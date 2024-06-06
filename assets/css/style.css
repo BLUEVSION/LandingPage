@@ -552,6 +552,7 @@
 }
 
 .impactos__title {
+    font-size: 60px;
     display: flex;
     align-items: flex-start;
     justify-content: left;
@@ -1084,7 +1085,7 @@
     color: #a1f4ff;
 }
 
-.benef__title{ /* ISSO AQ TA MUDANDO TUDO!!!!!!!!!!!!!!!! */
+.benef__title{ 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1155,6 +1156,10 @@
     margin-top: 3%;
 }
 
+.benef-list__item{
+    margin-bottom: 5%;
+}
+
 .benef-list__item1 h2,
 .benef-list__item2 h2,
 .benef-list__item3 h2,
@@ -1163,3 +1168,88 @@
 .benef-list__item6 h2{
     font-size: 45px;
 }
+
+/*------------ CONSEQUENCIAS INAÇÃO---------------- */
+
+#Consequencias{
+    margin-top: 190%;
+    width: 100%; 
+    float: none; 
+}
+
+.conseq__color1{
+  
+    color: #a1f4ff;
+}
+
+.conseq__title{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    margin-top: -123%;
+    padding-bottom: 20px;
+    margin-bottom: 3%;
+    z-index: 2;
+}
+
+.conseq__title h2{
+    margin: 0;
+    display: block;
+    font-size: 130px;
+    z-index: 3;
+}
+
+.conseq__title h3{
+    margin: 0;
+    display: block;
+    font-size: 35px;
+    margin-bottom: 1%;
+    z-index: 3;
+}
+
+.container {
+    font-size: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%; 
+    text-align: center;
+}
+
+
+.conseq-content__list{
+    margin-top: 5%;
+    
+}
+
+.hr__conseq1{
+    margin-bottom: 5%;
+    width: 90%;
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: white 2px solid;
+    justify-content: center;
+
+}
+
+.conseq-list__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.conseq-list__content{
+    list-style: none;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+.conseqlist__item{
+    margin-bottom: 5%;
+    font-size: 25px;
+}
+

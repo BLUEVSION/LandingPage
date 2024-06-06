@@ -135,11 +135,11 @@
 #elements10{
     width: 35%;
     height: 105%;
-    max-height: 600px;
+    max-height: 400px;
     max-width: 600px; 
     margin: 0 auto; 
-    margin-left: 20%;
-    margin-bottom: 90%;
+    margin-left: -3%;
+    margin-bottom: 32%;
     rotate: 180deg;
     z-index: 0;
 }
@@ -168,7 +168,7 @@
 }
 
 #elements14{
-    margin-top: -55%;
+    margin-top: -45%;
 }
 
 #elements15{
