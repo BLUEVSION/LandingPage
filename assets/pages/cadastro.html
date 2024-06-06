@@ -1,14 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início</title>
+    <title>BlueVision | Entrar</title>
     <link rel="stylesheet" href="style.css">
     <script src="../script/register.js" defer></script>
 
+    <link rel="shortcut icon" type="imagex/png" href="assets/img/logo/icon.png">
+
     <style>
         body {
+          position: relative;
+          background-image: url('/assets/img/background/header/header7.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          
+          color: white;
           font-family: Arial, sans-serif;
           margin: 0;
           padding: 0;
@@ -61,6 +73,18 @@
           background-color: #dc3545;
           color: #fff;
         }
+
+      
+        .centered__div {
+          background-color: white;
+          border-radius: 15px;
+          height: 500px;
+          width: 500px;
+          padding: 20px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          text-align: center;
+  
+}
       </style>
     </head>
     <body>
@@ -77,8 +101,16 @@
       </div>
     </div>
     
-    <h1>Bem-vindo!</h1>
-    <button id="login-btn">Entrar</button>
+    <main class="main">
+      <div class="centered__div">
+
+        <h1>Bem-vindo!</h1>
+        <button id="login-btn">Entrar</button>
+  
+      </div>
+    </main>
+
+    
     
     <script>
       
