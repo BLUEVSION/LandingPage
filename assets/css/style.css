@@ -730,7 +730,7 @@ body{
     margin-bottom: -10.5%;
     margin-left: 11.2%;
     width: 100%;
-    max-height: 450px;
+    max-height: 650px;
     overflow: hidden;
 
 }
@@ -766,8 +766,10 @@ body{
 }
 
 .pem-title__text{
-    margin-top: -6%;
+    margin-top: -26%;
     background-color: 0;
+    font-size: 55px;
+    margin-bottom: 15%;
 }
 
 .pem__text{
@@ -1116,6 +1118,57 @@ body{
     z-index: 3;
 }
 
+/*-------------------------BENEFICIO TITLE COM VIDEO--------------------------------*/
+
+.benef-list__title {
+    text-align: center;
+    margin-top: 5%;
+    position: relative; 
+    margin-bottom: 5%;
+    
+}
+
+.benef-list__title {
+    text-align: center;
+    margin-top: 5%;
+    position: relative; 
+    margin-bottom: 5%;
+    
+}
+
+.benef-video-container {
+    margin: 0 auto; 
+    width: 100%;
+    max-width: 1900px;
+    max-height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+    
+
+.benef-video-pem__title {
+    width: 100%;
+    height: 120%;
+    display: block; 
+    border-radius: 5px;
+
+}
+
+.benef-title-list__text{
+    text-transform: uppercase;
+    font-size: 70px;
+    margin-bottom: 20px;
+    z-index: 5;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+}
+
+/*---------------------------------------------------------*/
+
 .container {
     font-size: 30px;
     margin-left: 5%;
@@ -1221,16 +1274,38 @@ body{
 }
 
 .benef-item__text p {
+    line-height: 145%;
     width: 80%;
     margin-left: 5%;
     margin-right: 5%;
     text-align: center;
     margin-top: 20px; /* Espaço entre a imagem e o texto */
-    font-size: 30px; /* Ajuste o tamanho da fonte conforme necessário */
+    font-size: 35px; /* Ajuste o tamanho da fonte conforme necessário */
 }
 
+.benef__color1{
+    color: greenyellow;
+}
 
+.benef__color2{
+    color: rgb(255, 191, 0);
+    
+}
+
+.benef__color3{
+    color: #009cea;
+}
 /*------------ CONSEQUENCIAS INAÇÃO---------------- */
+
+.cosneq__slogan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
 
 #Consequencias{
     margin-top: 190%;
