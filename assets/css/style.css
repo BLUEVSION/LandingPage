@@ -154,6 +154,10 @@ body{
     padding-left: 20px;
 }
 
+.navbar-img__link{
+    width: 110%;
+}
+
 /*----------------------- MENU LATERAL -----------------------*/
 
 #hamburger {
@@ -759,13 +763,7 @@ body{
     z-index: 2;
 }
 
-.pem__title h2{
-   
 
-    background-color: rgba(0, 0, 0, 0.173);
-    
-    
-}
 
 .pem-title__text{
     margin-top: -26%;
@@ -781,7 +779,7 @@ body{
 
 .pem__text p{
     font-size: 40px;
-    padding-bottom: 35px;
+    margin-top: 10%;
 }
 
 .pem__color1{
@@ -1018,6 +1016,7 @@ body{
     width: 100vw;
     margin-left: calc(49.5% - 50vw);
     margin-bottom: 5%;
+    margin-top: 5%;
     
 }
 
@@ -1033,7 +1032,7 @@ body{
 }
 
 .pem__slogan{
-    
+    margin-top: -30%;
     font-size: 50px;    
 }
 
@@ -1661,6 +1660,7 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 100%;
+    margin-bottom: 70%;
 }
 
 .tec__title{ 
@@ -1726,8 +1726,8 @@ body{
     height: 200px;
     margin: 10px;
     padding: 10px;
-    background: linear-gradient(to top right, #4339c8, #8f79fb);
-    border: #4000ff 0.5px solid;
+    background: linear-gradient(to top right, #001a29, #003f64);
+    border: #0d0033 0.5px solid;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -1743,7 +1743,7 @@ body{
 
 .tec__list li:hover {
     transform: scale(1.05);
-    background: linear-gradient(to top right, #5347fa, #b6a7ff);
+    background: linear-gradient(to top right, #004065, #005d92);
 }
 
 .tec__list h3 {
@@ -1797,6 +1797,7 @@ footer {
     background: #333;
     color: #fff;
     padding: 40px 0;
+    margin-top: 25%;
     
     
 }

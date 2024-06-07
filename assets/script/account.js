@@ -46,6 +46,11 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 
     saveBtn.addEventListener('click', function() {
+        if (!usernameInput.value || !emailInput.value || !passwordInput.value) {
+            alert('Todos os campos devem ser preenchidos.');
+            return;
+        }
+
         const updatedUser = {
             username: usernameInput.value,
             email: emailInput.value,
