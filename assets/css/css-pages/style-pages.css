@@ -97,7 +97,7 @@ button:hover {
     box-sizing: border-box;
 }
 
-#login-form button[type="submit"] {
+#login-form-btn [type="submit"] {
     width: 100%;
     padding: 10px;
     background-color: #4CAF50;

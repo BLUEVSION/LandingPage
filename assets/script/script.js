@@ -67,3 +67,71 @@ function handleLogin() {
     }
 }
 
+// JS PARA CONTA!!!!!!!!
+
+document.addEventListener("DOMContentLoaded", function () {
+    const editBtn = document.getElementById("edit-btn");
+    const saveBtn = document.getElementById("save-btn");
+    const profilePic = document.getElementById("profile-pic");
+    const profilePicInput = document.getElementById("profile-pic-input");
+    const usernameInput = document.getElementById("username");
+    const emailInput = document.getElementById("email");
+    const passwordInput = document.getElementById("password");
+
+    // Carregar informações da conta do localStorage
+    function loadAccountData() {
+        const storedUsername = localStorage.getItem("username");
+        const storedEmail = localStorage.getItem("email");
+        const storedPassword = localStorage.getItem("password");
+        const storedProfilePic = localStorage.getItem("profilePic");
+
+        if (storedUsername) usernameInput.value = storedUsername;
+        if (storedEmail) emailInput.value = storedEmail;
+        if (storedPassword) passwordInput.value = storedPassword;
+        if (storedProfilePic) profilePic.src = storedProfilePic;
+    }
+
+    loadAccountData();
+
+    // Ativar edição
+    editBtn.addEventListener("click", function () {
+        usernameInput.removeAttribute("disabled");
+        emailInput.removeAttribute("disabled");
+        passwordInput.removeAttribute("disabled");
+        saveBtn.style.display = "block";
+        editBtn.style.display = "none";
+    });
+
+    // Salvar alterações
+    saveBtn.addEventListener("click", function () {
+        const newUsername = usernameInput.value;
+        const newEmail = emailInput.value;
+        const newPassword = passwordInput.value;
+
+        localStorage.setItem("username", newUsername);
+        localStorage.setItem("email", newEmail);
+        localStorage.setItem("password", newPassword);
+
+        usernameInput.setAttribute("disabled", true);
+        emailInput.setAttribute("disabled", true);
+        passwordInput.setAttribute("disabled", true);
+        saveBtn.style.display = "none";
+        editBtn.style.display = "block";
+
+        alert("Informações atualizadas com sucesso!");
+    });
+
+    // Trocar foto de perfil
+    profilePicInput.addEventListener("change", function (event) {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                profilePic.src = e.target.result;
+                localStorage.setItem("profilePic", e.target.result);
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+});
+
