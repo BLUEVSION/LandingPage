@@ -74,20 +74,90 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-//FLIP
+document.addEventListener('DOMContentLoaded', function() {
+ 
+    const target = document.querySelector('.cosneq__slogan');
+  
+
+    const options = {
+      root: null, 
+      rootMargin: '0px',
+      threshold: 0.1 
+    };
+  
+   
+    const callback = function(entries, observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          
+        }
+      });
+    };
+  
+   
+    //FOOTER 
+
+    const observer = new IntersectionObserver(callback, options);
+  
+    if (target) {
+      observer.observe(target);
+    }
+  });
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    // Seleciona todos os quadrados
-    const squares = document.querySelectorAll('.impactos__list li.square');
+  document.addEventListener("DOMContentLoaded", function() {
+    var title = document.querySelector('.footer__title');
+    var titlePosition = title.getBoundingClientRect().top;
+    var screenPosition = window.innerHeight / 1.3;
 
-    // Adiciona um event listener para cada quadrado
-    squares.forEach(square => {
-        square.addEventListener('click', function() {
-            // Alterna a classe de flip
-            this.classList.toggle('flip');
-        });
-    });
+    function fadeInTitle() {
+        if (titlePosition < screenPosition) {
+            title.classList.add('active');
+        }
+    }
+
+    fadeInTitle();
+
+    window.addEventListener('scroll', fadeInTitle);
+});
+
+
+
+
+//HAMBUGER
+
+document.getElementById('hamburger').addEventListener('click', function(event) {
+    const checkbox = this.querySelector('input');
+    const sideMenu = document.getElementById('sideMenu');
+    const overlay = document.getElementById('overlay');
+    event.stopPropagation();
+
+    if (checkbox.checked) {
+        sideMenu.classList.add('open');
+        overlay.classList.add('visible');
+    } else {
+        sideMenu.classList.remove('open');
+        overlay.classList.remove('visible');
+    }
+});
+
+document.getElementById('overlay').addEventListener('click', function() {
+    document.getElementById('hamburger').querySelector('input').checked = false;
+    document.getElementById('sideMenu').classList.remove('open');
+    this.classList.remove('visible');
+});
+
+document.addEventListener('click', function(event) {
+    const sideMenu = document.getElementById('sideMenu');
+    const hamburger = document.getElementById('hamburger');
+    const overlay = document.getElementById('overlay');
+
+    if (!sideMenu.contains(event.target) && !hamburger.contains(event.target)) {
+        hamburger.querySelector('input').checked = false;
+        sideMenu.classList.remove('open');
+        overlay.classList.remove('visible');
+    }
 });
 
 

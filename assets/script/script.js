@@ -19,35 +19,51 @@ function stayOnScreen() {
 }
 
 
-document.getElementById('hamburger').addEventListener('click', function(event) {
-    const checkbox = this.querySelector('input');
-    const sideMenu = document.getElementById('sideMenu');
-    const overlay = document.getElementById('overlay');
-    event.stopPropagation();
+function handleInitialPrompt() {
+    const wantsToRegister = confirm("Você deseja se cadastrar?");
+    sessionStorage.setItem("alertShown", "true");
 
-    if (checkbox.checked) {
-        sideMenu.classList.add('open');
-        overlay.classList.add('visible');
+    if (wantsToRegister) {
+        window.location.href = "register.html";
     } else {
-        sideMenu.classList.remove('open');
-        overlay.classList.remove('visible');
+        document.getElementById("login-btn").style.display = "block";
     }
-});
+}
 
-document.getElementById('overlay').addEventListener('click', function() {
-    document.getElementById('hamburger').querySelector('input').checked = false;
-    document.getElementById('sideMenu').classList.remove('open');
-    this.classList.remove('visible');
-});
+function handleRegister() {
+    const username = document.getElementById("username").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
 
-document.addEventListener('click', function(event) {
-    const sideMenu = document.getElementById('sideMenu');
-    const hamburger = document.getElementById('hamburger');
-    const overlay = document.getElementById('overlay');
+    const storedUsername = localStorage.getItem("username");
+    const storedEmail = localStorage.getItem("email");
 
-    if (!sideMenu.contains(event.target) && !hamburger.contains(event.target)) {
-        hamburger.querySelector('input').checked = false;
-        sideMenu.classList.remove('open');
-        overlay.classList.remove('visible');
+    if (username === storedUsername || email === storedEmail) {
+        alert("Nome de usuário ou email já cadastrados. Tente novamente.");
+    } else {
+        localStorage.setItem("username", username);
+        localStorage.setItem("email", email);
+        localStorage.setItem("password", password);
+
+        alert("Cadastro realizado com sucesso!");
+        window.location.href = "login.html";
     }
-});
+}
+
+function handleLogin() {
+    const username = document.getElementById("login-username").value;
+    const email = document.getElementById("login-email").value;
+    const password = document.getElementById("login-password").value;
+
+    const storedUsername = localStorage.getItem("username");
+    const storedEmail = localStorage.getItem("email");
+    const storedPassword = localStorage.getItem("password");
+
+    if (username === storedUsername && email === storedEmail && password === storedPassword) {
+        alert("Login bem-sucedido!");
+        window.location.href = "welcome.html";
+    } else {
+        alert("Credenciais inválidas. Tente novamente.");
+    }
+}
+

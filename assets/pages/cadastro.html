@@ -4,136 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BlueVision | Entrar</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="../script/register.js" defer></script>
+    <link rel="stylesheet" href="../css/css-pages/style-entrar.css">
+    <script src="../script/script.js" defer></script>
 
-    <link rel="shortcut icon" type="imagex/png" href="assets/img/logo/icon.png">
+    <link rel="shortcut icon" type="image/png" href="assets/img/logo/icon.png">
 
-    <style>
-        body {
-          position: relative;
-          background-image: url('/assets/img/background/header/header7.jpg');
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-          height: auto;
-          display: flex;
-          flex-direction: column;
-          
-          color: white;
-          font-family: Arial, sans-serif;
-          margin: 0;
-          padding: 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-        }
-    
-        .alert-container {
-          display: none;
-          background-color: rgba(0, 0, 0, 0.5);
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          z-index: 9999;
-        }
-    
-        .alert-box {
-          background-color: #fff;
-          max-width: 400px;
-          margin: auto;
-          padding: 20px;
-          border-radius: 5px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-    
-        .alert-message {
-          margin-bottom: 15px;
-        }
-    
-        .btn-container {
-          text-align: center;
-        }
-    
-        .btn {
-          padding: 10px 20px;
-          margin-right: 10px;
-          cursor: pointer;
-        }
-    
-        .btn-yes {
-          background-color: #28a745;
-          color: #fff;
-        }
-    
-        .btn-no {
-          background-color: #dc3545;
-          color: #fff;
-        }
 
-      
-        .centered__div {
-          background-color: white;
-          border-radius: 15px;
-          height: 500px;
-          width: 500px;
-          padding: 20px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          text-align: center;
-  
-}
-      </style>
-    </head>
-    <body>
-    
-    <div class="alert-container" id="alertContainer">
-      <div class="alert-box">
-        <div class="alert-message">
-          <p>Deseja ir para a tela 2?</p>
-        </div>
-        <div class="btn-container">
-          <button class="btn btn-yes" onclick="goToScreen2()">Sim</button>
-          <button class="btn btn-no" onclick="stayOnScreen()">Não</button>
-        </div>
-      </div>
-    </div>
-    
-    <main class="main">
+</head>
+<body>
+  <main class="main">
       <div class="centered__div">
-
-        <h1>Bem-vindo!</h1>
-        <button id="login-btn">Entrar</button>
-  
+          <div class="title">
+            <h1>Bem-vindo!</h1>
+            <p>Cadastre-se para receber atualizações e baixar o programa completo.</p>
+          </div>
+          <a class="btn" href="login.html">Entrar</a><br>
+          <a class="btn-cad" href="register.html" id="signup-link">Não possui uma conta? Cadastre-se</a>
+          <a class="back-to-home" href="../../index.html"> < Voltar a Tela Inicial</a>
       </div>
-    </main>
-
-    
-    
-    <script>
-      
-      const hasSeenAlert = sessionStorage.getItem('hasSeenAlert');
-    
-      if (!hasSeenAlert) {
-        const alertContainer = document.getElementById('alertContainer');
-        alertContainer.style.display = 'block';
-      }
-    
-      function goToScreen2() {
-        sessionStorage.setItem('hasSeenAlert', true);
-        window.location.href = 'register.html';
-      }
-    
-      // Função para permanecer na tela atual
-      function stayOnScreen() {
-        sessionStorage.setItem('hasSeenAlert', true);
-        const alertContainer = document.getElementById('alertContainer');
-        alertContainer.style.display = 'none';
-      }
-    </script>
-    
-    </body>
-    </html>
-
+  </main>
+</body>
+</html>
