@@ -401,12 +401,13 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 28000px;
+    height: 30000px;
 
     display: flex;
     flex-direction: column;
     
     color: white;
+    
    
 }
 
@@ -415,7 +416,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    height: 27000px;
+    height: 30000px;
     object-fit: cover;
     z-index: 0; 
 }
@@ -823,15 +824,113 @@ body{
     margin-bottom: 10px;
 }
 
-/*------------- OBJETIVOS PEM ----------------- */
+/*------------- EMPRESA SLOGAN ----------------- */
 
-.container-obj {
+.container-slog {
     max-width: 1900px;
-    
     color: white;
     border-radius: 8px;
     margin-bottom: 15%;
+    background-color: #00000028; 
+    padding: 20px; 
+    transition: 0.5s ease-in-out;
+}
 
+.container-slog:hover{
+    background-color: #00000066; 
+}
+
+.container-slog hr {
+    margin-top: 0px;
+    border: white 1px solid;
+    width: 100%;
+    align-items: flex-start;
+    min-width: 1240px;
+    margin-bottom: 5%;
+}
+
+.image-container__slog {
+    
+    position: relative;
+    width: 100%;
+    max-width: 1700px;
+    overflow: hidden;
+    height: 300px; 
+    margin-right: 10%;
+    margin-bottom: 5%;
+    
+}
+
+.image-container__slog img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    margin-bottom: 5%;
+    filter: brightness(50%);
+    border-radius: 4px;
+}
+
+.image-container__slog .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 34px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+.text-overlay{
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+
+.container-slog h1 {
+    text-transform: uppercase;
+    font-size: 70px;
+    text-align: center;
+}
+
+.container-slog ul {
+    list-style: none;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.container-slog li {
+    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.pem__color1 {
+    color: #007BFF; /* Altere para a cor desejada */
+}
+
+.benef__color1 {
+    color: #28A745; /* Altere para a cor desejada */
+}
+
+/*------------- OBJETIVOS PEM ----------------- */
+
+.color__1{
+    color: #00e1ff;
+}
+
+.container-obj {
+    max-width: 1900px;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 15%;
+    background-color: #00000028; 
+    padding: 20px;
+    transition: 0.5s ease-in-out;
+
+}
+
+.container-obj:hover{
+    background-color: #00000066;
 }
 
 .container-obj hr{
@@ -845,7 +944,7 @@ body{
 
 .container-obj h1 {
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 70px;
     text-align: center;
   
 }
@@ -906,7 +1005,7 @@ body{
     margin-bottom: 10%;
     
 }
-
+    
 .pem-solgan-img__div{
     position: relative; /* Necessário para posicionamento absoluto do texto filho */
     max-height: 400px;
@@ -1698,6 +1797,7 @@ footer {
     background: #333;
     color: #fff;
     padding: 40px 0;
+    
     
 }
 
