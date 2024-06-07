@@ -7,6 +7,30 @@ window.addEventListener('DOMContentLoaded', function() {
         document.getElementById('password').value = storedUser.password;
     }
 
+    const profilePic = document.getElementById('profile-pic');
+    const profilePicInput = document.getElementById('profile-pic-input');
+    const storedProfilePic = localStorage.getItem('profilePic');
+
+    if (storedProfilePic) {
+        profilePic.src = storedProfilePic;
+        profilePic.style.display = 'block';
+    } else {
+        profilePic.style.display = 'none';
+    }
+
+    profilePicInput.addEventListener('change', function(event) {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                profilePic.src = e.target.result;
+                profilePic.style.display = 'block';
+                localStorage.setItem('profilePic', e.target.result);
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+
     const editBtn = document.getElementById('edit-btn');
     const saveBtn = document.getElementById('save-btn');
     const usernameInput = document.getElementById('username');
